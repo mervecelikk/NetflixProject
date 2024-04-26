@@ -1,0 +1,411 @@
+
+.netflix-content:hover{
+    transform: translateY(-6px);
+    cursor: pointer;
+}
+
+:root {
+   --bs-red: #e50914;
+}
+
+body {
+   padding: 0;
+   margin: 0;
+   font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+img {
+   max-width: 100%;
+}
+
+section {
+   border-top: 8px solid #222;
+   padding-top: 50px;
+   padding-bottom: 40px;
+   background-color: #000000;
+}
+
+section h2 {
+   font-size: 55px;
+   color: #fff;
+   font-weight: bold;
+}
+
+section p {
+   font-size: 22px;
+   color: #fff;
+}
+
+h1 {
+   color: #fff;
+   font-size: 80px;
+}
+
+h3,
+h5 {
+   color: #fff;
+}
+
+.text-common {
+   color: #757575;
+}
+
+.row {
+   margin: 0px;
+}
+
+.navbar {
+   position: absolute;
+   width: 100%;
+}
+
+.form-select {
+   background-color: #333;
+   border: 1px solid #757575;
+   color: #757575;
+   height: 52px;
+}
+
+a.navbar-brand {
+   color: #e50914 !important;
+   font-size: 44px;
+   font-weight: bold;
+}
+
+.bg-img {
+   background-image: url('../img/background.jpg');
+   height: 700px;
+   width: 100%;
+  
+}
+
+.layer {
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+   height: 100%;
+}
+
+.top-sign-in {
+   height: 34px;
+   margin-top: 10px;
+   padding-top: 5px;
+}
+
+.input-group-text {
+   font-size: 28px;
+   background-color: #e50914;
+   color: #fff;
+   border: 0px;
+   cursor: pointer;
+}
+
+.btn2{
+
+   background: #e50914;
+   width: 200px;
+   padding-top: 12px;
+  
+}
+
+
+.btn-check:focus+.btn,
+.btn:focus {
+   box-shadow: none;
+}
+/* section 2 */
+.video-tv img, .video-desktop img{
+    position: relative;
+    z-index: 1; 
+}
+
+.video-tv video{
+    position: absolute;
+    left: 14.5%;
+    top: 21%;
+    max-width: 70%;
+
+}
+/* section 3 */
+.mobile-card{
+    position: absolute;
+    left: 40%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: black;
+    width: 55%;
+    min-width: 15em;
+    height: 25%;
+    padding: 0.25em 0.65em;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 2em 0 #000000;
+    border-radius: 0.75em;
+}
+
+.mobile-card .card-image img{
+    height: 4.5em;
+}
+
+.mobile-card h5{
+    font-size: 1rem;
+}
+
+.mobile-card label{
+    font-size: 0.9em;
+    color: #0071eb;
+}
+
+.mobile-card .gif img{
+    width: 3em;
+}
+
+/* section 3 end */
+
+/* section 4 */
+
+.video-desktop video{
+    position: absolute;
+    left: 18%;
+    max-width: 62%;
+    top: 11%;
+}
+.main-search input {
+   height: 70px;
+}
+
+.faq .btn {
+   width: 100%;
+   height: 72px;
+   background-color: #303030;
+   font-size: 30px;
+   padding-top: 12px;
+   text-align: left;
+   padding-left: 30px;
+   margin-bottom: 10px;
+   border-radius: 0px;
+}
+
+.multi-collapse.show {
+   margin-bottom: 10px;
+}
+
+.faq .card {
+   background-color: #303030;
+   font-size: 26px;
+   color: #fff;
+   padding-left: 30px;
+}
+
+
+/* FOOTER */
+
+footer {
+   background-color: #000000;
+   padding-top: 40px;
+   border-top: 8px solid #222;
+}
+
+footer ul {
+   list-style-type: none;
+}
+
+footer ul li {
+   color: #757575;
+   margin-bottom: 15px;
+}
+
+footer a {
+   text-decoration: none;
+   color: #757575;
+}
+
+footer a:hover {
+   color: #757575;
+   text-decoration: underline;
+}
+
+.textcolor{
+    color: #757575; 
+}
+
+.worldicon{
+   color: #757575
+}
+
+
+
+/* RESPONSIVE TASARIM */
+@media (min-width: 1406px){
+   .mobile-card{
+      position: absolute;
+      left: 40%;
+      bottom: 8%;
+      transform: translateX(-50%);
+      margin: 0 auto;
+      background: black;
+      width: 55%;
+      min-width: 15em;
+      height: 25%;
+      padding: 0.25em 0.65em;
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 0 2em 0 #000000;
+      border-radius: 0.75em;
+  }
+  
+  .mobile-card .card-image img{
+      height: 4.5em;
+  }
+  
+  .mobile-card h5{
+      font-size: 1rem;
+  }
+  
+  .mobile-card label{
+      font-size: 0.9em;
+      color: #0071eb;
+  }
+  
+  .mobile-card .gif img{
+      width: 3em;
+  } 
+}
+   
+
+
+@media(min-width: 1200px) {
+   .main-search .input-group {
+      width: 60%;
+      margin: 0 auto;
+   }
+}
+
+@media(max-width: 800px) {
+   .layer h1 {
+      font-size: 60px;
+   }
+}
+
+
+
+
+@media(max-width: 772px) {
+   .mobile-card{
+      position: absolute;
+      left: 50%;
+      bottom: 8%;
+      transform: translateX(-50%);
+      margin: 0 auto;
+      background: black;
+      width: 55%;
+      min-width: 15em;
+      height: 25%;
+      padding: 0.25em 0.65em;
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 0 2em 0 #000000;
+      border-radius: 0.75em;
+  }
+  
+  .mobile-card .card-image img{
+      height: 3.5em;
+  }
+  
+  .mobile-card h5{
+      font-size: 1rem;
+  }
+  
+  .mobile-card label{
+      font-size: 0.7em;
+      color: #0071eb;
+  }
+  
+  .mobile-card .gif img{
+      width: 3em;
+  }
+  
+}
+
+@media(max-width: 768px) {
+   .reverse {
+      flex-direction: column-reverse;
+   }
+}
+
+
+
+@media(max-width: 612px) {
+   .layer h1 {
+      font-size: 50px;
+   }
+   .layer h5 {
+      font-size: 20px;
+   }
+   section h2 {
+      font-size: 40px;
+   }
+   .main-search input,
+   .input-group-text {
+      width: 100% !important;
+      border-radius: 0px;
+      border: 0px;
+   }
+   .input-group-text {
+      margin-top: 5px;
+   }
+   .faq .btn {
+      font-size: 20px;
+      height: auto;
+      padding-top: 5px;
+      padding-left: 10px;
+   }
+   .faq .card {
+      font-size: 16px;
+      padding-left: 10px;
+   }
+   section p {
+      font-size: 18px;
+   }
+}
+
+@media(max-width: 515px) {
+   .layer h1 {
+      font-size: 40px;
+   }
+   .layer h5 {
+      font-size: 16px;
+   }
+   .bottom-search p {
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+   a.navbar-brand {
+      font-size: 32px;
+   }
+   .form-select {
+      height: 40px;
+   }
+   .top-sign-in {
+      margin-top: 3px;
+   }
+   .px-5 {
+      padding-right: 10px!important;
+      padding-left: 10px!important;
+   }
+   .layer h3 {
+      font-size: 20px;
+   }
+   .layer h5 {
+      font-size: 14px;
+   }
+}
+
+@media(max-width:425px) {
+   .layer h1 {
+      font-size: 34px;
+   }
+}
+
+

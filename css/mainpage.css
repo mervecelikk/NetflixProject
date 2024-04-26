@@ -1,0 +1,406 @@
+body{
+    background-color: #141414; 
+    overflow-x: hidden;
+    width: 100vw;
+    position: relative;
+     padding: 0;
+     margin: 0;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+     
+}
+
+
+/* navbar */
+
+.netflixnavbar{
+    /* background-color: #0C0C0C !important;  */
+    z-index: 1000;
+    transition: background 0.2s linear;
+    position: fixed;
+    width: 100vw;
+}
+
+
+.netflix-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.navbar-brand img{
+    width: 100px;
+}
+
+.paddingleft{
+    padding-left: 57px;
+}
+
+
+.paddingright{
+    padding-right: 57px;
+}
+
+.dropdownbox{
+    display: none;
+}
+
+.netflix-dropdown{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 9px !important;
+}
+
+.dropdownbox .dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.789);
+    font-size: 9px !important;
+    color: #fff !important;
+    margin-left: -80px;
+    border-top: 3px solid #fff;
+    margin-top: 30px;
+}
+
+.dropdownbox .dropdown-menu .dropdown-item{
+    color: rgba(255, 255, 255, 0.646);
+    text-align: center;
+    width: 250px;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.dropdownbox .dropdown-menu .dropdown-item:hover{
+   background-color: rgba(255, 255, 255, 0.133);
+   color: #fff;
+}
+
+.navbarnetflix{
+    display: block ;
+    align-items: center;
+}
+
+.navbarnetflix button{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.623);
+    border: none;
+    font-size: 15px;
+}
+
+.navbarnetflix button:hover{
+    color: #fff;
+}
+
+i{
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 20px;
+}
+
+.cocuk{
+    font-size: 20px;
+    color: #fff;
+    padding-top: 15px;
+}
+
+.user img{
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* video */
+
+.mainvideo{
+    width: 100%;
+    z-index: 10;
+    position: relative;
+}
+
+.mainvideo .top{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+.mainvideo .bottom{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #141414);
+}
+.mainvideo video{
+    width: 100%;
+
+}
+
+/* .videoposter img{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+  
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #141414);
+} */
+
+
+
+.mainvideo .content{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    /* background-color: #fff; */
+    z-index: 100;
+    display: flex;
+}
+
+.mainvideo .content .left{
+    margin-left: 80px;
+}
+.mainvideo .content .left img{
+   margin-top: 190px;
+   
+}
+.mainvideo .content .right{
+    width: 50%;
+}
+
+/* SLİDER */
+
+.slider1{
+    position: absolute;
+    top: 600px ;
+    z-index: 500;
+    
+}
+
+
+
+.slider2{
+    position: absolute;
+    top: 950px ;
+    z-index: 500;
+}
+
+.slider3{
+    position: absolute;
+    top: 1300px ;
+    z-index: 500;
+}
+
+
+.card{
+    width: 250px;
+    background-color: #141414;
+    border-radius: 4px;
+    transition: 0.2s linear;
+    margin: 3px;
+    position: relative;
+}
+
+
+.card:hover{
+    transform: scaleX(1.4) scaleY(1.4);
+    z-index: 10;
+}
+
+
+.card-body{
+    display: none;
+    /* height: 0px; */
+    padding: 10px 15px;
+    position: absolute;
+    background-color: #141414;
+    top: 120px;
+    width: 100%;
+}
+
+
+.card-icon{
+    color: #fff;
+    padding: 0px !important;
+    font-size: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card:hover > .card-body{
+    display: block;
+    /* height: max-content !important; */
+}
+
+.carousel-control-prev{
+    display: none;
+}
+
+.carousel-control-next{
+    display: none;
+}
+
+.tab-change-btn{
+    border: none;
+    width: 30px !important;
+}
+
+
+.margin-right{
+    margin-right: 100px;
+}
+
+.card-text{
+    font-size: 12px ;
+}
+
+.position-slider2{
+    top: 10px !important;
+    position: absolute !important;
+}
+
+.margin-title2{
+    margin-top: 33px;
+}
+
+.position-slider3{
+    top: 10px !important;
+    position: absolute !important;
+}
+
+
+/* RESPONSIVE TASARIM */
+@media(max-width:1190px){
+    .mainvideo .left img{
+
+        width: 45%;
+        height: 35%;
+    }
+}
+@media(max-width:767.98px){
+    .paddingleft{
+        padding-left: 10px !important;
+    }
+    
+    
+    .paddingright{
+        padding-right: 10px !important;
+    }
+    .navbar-brand img{
+        width: 43px;
+   }
+   .navbar{
+       padding-top: unset !important;
+       padding-bottom: unset !important;
+   }
+   i{
+       font-size: 12px;
+       cursor: pointer;
+       padding: 5px !important;
+   }
+
+   .cocuk{
+    font-size: 12px;
+    color: #fff;
+    padding-top: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+   .user img{
+       margin-left: 5px ;
+       margin-bottom: 2px;
+       width: 16px;
+       height: 15px;
+   }
+   .dropdownbox{
+    display: block;
+}
+.navbarnetflix{
+    display: none !important;
+}
+
+/* video */
+.mainvideo .content .left{
+    margin-left: 25px;
+}
+.mainvideo .content .left img{
+    width: 200px;
+    margin-top: 90px !important;
+}
+button{
+    font-size: 10px !important;
+    width: max-content !important;
+    opacity: 0.8;
+}
+
+/*slider*/
+.slider1{
+    top: 250px;
+    margin-left: 0px;
+}
+
+.slider2{
+    top: 550px;
+    margin-left: 0px;
+}
+
+.slider3{
+    top: 850px;
+    margin-left: 0px;
+}
+.card{
+    width: 150px;
+}
+.margin-right{
+    margin-right: unset;
+}
+.card-icon{
+    font-size: 17px !important;
+}
+.card-body{
+    top: 80px !important;
+}
+.card-text{
+    font-size: 8px;
+   text-align: center;
+}
+.position-slider2{
+    top: 0px !important;
+}
+.margin-title{
+    margin-top: 100px;
+}
+.margin-title2{
+    margin-top: 14px;
+}
+.copy-right{
+    
+      margin-left: 0px !important;
+}
+}
+
+@media(max-width:570px){
+
+    .mainvideo .left img{
+
+        width: 15%;
+        height: 25%;
+    }
+
+}
+@media(max-width:462px){
+
+    .mainvideo .left img{
+
+        width: 15%;
+        height: 25%;
+    }
+
+    .mainvideo .left .btn{
+
+        width: 5%;
+        height: 5%;
+    }
+
+}
